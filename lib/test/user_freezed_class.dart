@@ -12,3 +12,20 @@ abstract class User with _$User{
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
 
 }
+
+
+@freezed
+abstract class OperationNested with _$OperationNested{
+  const factory OperationNested.add( int value) = _Add;
+  const factory OperationNested.subtract( { required int value}) = _Subtract;
+
+}
+
+@freezed
+abstract class OperationNonNested with _$OperationNonNested{
+  const factory OperationNonNested.increment( int value) = Increment;
+  const factory OperationNonNested.decrement( { required int value}) = Decrement;
+
+}
+
+
