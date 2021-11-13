@@ -5,6 +5,8 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'user_freezed_class.freezed.dart';
 part 'user_freezed_class.g.dart';
 
+//data class
+
 @JsonSerializable()
 @freezed
 abstract class User with _$User{
@@ -13,7 +15,7 @@ abstract class User with _$User{
 
 }
 
-
+//union nested
 @freezed
 abstract class OperationNested with _$OperationNested{
   const factory OperationNested.add( int value) = _Add;
@@ -21,6 +23,7 @@ abstract class OperationNested with _$OperationNested{
 
 }
 
+//Union non nested
 @freezed
 abstract class OperationNonNested with _$OperationNonNested{
   const factory OperationNonNested.increment( int value) = Increment;
