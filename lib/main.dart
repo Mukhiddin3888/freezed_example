@@ -1,7 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:freezed_example/test/user_freezed_class.dart';
 
 void main() {
-  runApp(const MyApp());
+
+
+
+  final user = User('Matt', 20);
+  // user.age = 5; // error, User is immutable
+
+  final Map<String, dynamic> serialized = user.toJson();
+  final User deserialized = User.fromJson(serialized);
+  print(serialized);
+  print(deserialized);
+
 }
 
 class MyApp extends StatelessWidget {

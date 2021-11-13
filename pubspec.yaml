@@ -35,6 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   json_annotation: ^4.1.0
+  freezed_annotation: ^0.14.3
 
 
 dev_dependencies:
@@ -42,6 +43,7 @@ dev_dependencies:
     sdk: flutter
   freezed: ^0.14.5
   json_serializable: ^5.0.2
+  build_runner: ^2.1.2
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
